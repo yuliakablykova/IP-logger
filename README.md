@@ -1,4 +1,4 @@
-# IP-logger
+# IP-logger V-b-1.2.3333333333333333 Educational Uses Only ©️
 
 ## Instalation
 > Download repo!
