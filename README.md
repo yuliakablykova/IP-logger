@@ -17,6 +17,11 @@ node Server.js
 ```shell
 npm install pm2 -g && pm2 start Server.js
 ```
+
+> All-in-one!
+```shell
+git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm install pm2 -g && pm2 start Server.js
+```
 ## Configuration
 ```json
 {
