@@ -1,6 +1,10 @@
 # IP-logger
 
 ## Instalation
+> Download repo!
+```shell
+git clone https://github.com/NotYmL/IP-logger
+```
 > Install Dependencies!
 ```shell
 npm i
