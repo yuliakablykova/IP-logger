@@ -7,6 +7,8 @@ https://github.com/EesaZahed/IP-grabber            | good          | `None`     
 https://github.com/cchhaarroonn/Grabby             | `minimal`     | IpInfo.io     | True          | `Script`      | `?`           |
 https://grabify.link/                              | good          | grabify.link  | `False`       | WebSite       | True          |
 
+## [Wiki](https://github.com/NotYmL/IP-logger/wiki) added!
+
 ## Instalation
 > Download repo!
 ```shell
