@@ -30,10 +30,11 @@ npm install pm2 -g && pm2 start Server.js
 git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm install pm2 -g && pm2 start Server.js
 ```
 ### [How to use pm2](https://www.fastcomet.com/tutorials/nodejs/pm2)
+pm2 status
 
-#### pm2 status
-#### pm2 start <File-name>
-#### pm2 stop <ID-from-status>
+pm2 start <File-name>
+    
+pm2 stop <ID-from-status>
 
 ## Configuration
 ```json
