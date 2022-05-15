@@ -14,3 +14,12 @@ node Server.js
 npm install pm2 -g && pm2 start Server.js
 ```
 ## Configuration
+```json
+{
+    "Https": false,
+    "Https-privateKey": "FULL Path to privateKey",
+    "Https-certificate": "FULL Path to certificate",
+    "html": "web/Index.html",
+    "Discord-webhook": "Discord WebHook URL"
+}
+```
