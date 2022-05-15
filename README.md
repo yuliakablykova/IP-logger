@@ -23,3 +23,4 @@ npm install pm2 -g && pm2 start Server.js
     "Discord-webhook": "Discord WebHook URL"
 }
 ```
+### More customized configuration requires direct code changes
