@@ -1,5 +1,6 @@
 # IP-logger
 
+# Instalation
 > Install Dependencies!
 ```shell
 npm i
