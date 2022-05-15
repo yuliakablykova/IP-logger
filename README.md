@@ -1,7 +1,7 @@
 # IP-logger V-b-1.2.3333333333333333 Educational Uses Only ©️
 Logger/Grabber                                     | customization | IP look up    | Open Source   | Type          |
 ---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|
-**https://github.com/NotYmL/IP-logger/**           | **good**      | **IpInfo.io** | **True**      | **API**       |
+***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io*** | ***True***  | ***API***     |
 https://github.com/dzt/ip-grabber                  | `minimal`     | `None`        | True          | `Script`      |
 https://github.com/EesaZahed/IP-grabber            | good          | `None`        | True          | API           |
 https://github.com/cchhaarroonn/Grabby             | `minimal`     | IpInfo.io     | True          | `Script`      |
