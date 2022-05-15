@@ -92,3 +92,6 @@ Paste-into-code scripts are rated with minimal customization because any customi
 Paste-into-code scripts are alsou rated with ? in supporting https protocol this is because the User has to make his website https for the script to use in https
 > Note
 > grabify.link is the best option if you don't care about source code and if you do then the BEST TOOL for you is one that you will build, BUT for now my tool is THE BEST OPTION FOR YOU (;
+
+## Demo
+![](/repository/assets/demo.png)
