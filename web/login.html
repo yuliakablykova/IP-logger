@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div>
+            <p>Password:</p>
+            <input type="text" id="passwd" name="fname" size="40">
+        </div>
+            <br>
+            <input type="button" id="ButtonLable1" value="Login!" onclick="start();"/>
+        <div id="data">
+
+        </div>
+    </body>
+    <script>
+        function start(){
+            let passwd = document.getElementById('passwd').value;
+            fetch('/login', {
+                method: 'post',
+                body: JSON.stringify({"Password":passwd}),
+                headers: {'Content-Type': 'application/json'}
+            }).then(x => x.text()).then(x => {
+                let all = x.split('\n');
+                for(let i = 0; i < all.length; i++) {
+                    var element = document.createElement('p');
+                    element.innerHTML = all[i];
+                    let chatY = document.getElementById('data')
+                    chatY.appendChild(element);
+                }
+            })
+        }
+    </script>
+</html>
