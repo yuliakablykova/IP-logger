@@ -1,11 +1,11 @@
 # IP-logger V-b-1.2.3333333333333333 Educational Uses Only ©️
-|Logger/Grabber                                     | customization | IP look up    | Open Source   | Web Interface |
-|---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|
-|(dzt/ip-grabber)[https://github.com/dzt/ip-grabber]| `minimal`     | `None`        | True          | `Script`      |
-|(EesaZahed/IP-grabber)[https://github.com/EesaZahed/IP-grabber]| good | `None`     | True          | API           |
-|(cchhaarroonn/Grabby)[https://github.com/cchhaarroonn/Grabby]| `minimal` | IpInfo.io | True        | `Script`      |
-|(grabify)[https://grabify.link/]                   | good          | grabify.link  | `False`       | WebSite       |
-|(NotYmL/IP-logger)[https://github.com/NotYmL/IP-logger/] | good    | IpInfo.io     | True          | API           |
+Logger/Grabber                                     | customization | IP look up    | Open Source   | Web Interface |
+---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|
+https://github.com/dzt/ip-grabber| `minimal`     | `None`        | True          | `Script`      |
+https://github.com/EesaZahed/IP-grabber| good | `None`     | True          | API           |
+https://github.com/cchhaarroonn/Grabby| `minimal` | IpInfo.io | True        | `Script`      |
+https://grabify.link/                   | good          | grabify.link  | `False`       | WebSite       |
+https://github.com/NotYmL/IP-logger/ | good    | IpInfo.io     | True          | API           |
 
 ## Instalation
 > Download repo!
