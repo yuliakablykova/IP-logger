@@ -28,12 +28,18 @@ git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm i
 ```json
 {
     "Https": false,
-    "Https-privateKey": "FULL Path to privateKey",
-    "Https-certificate": "FULL Path to certificate",
+    "Https-privateKey": null,
+    "Https-certificate": null,
     "html": "web/Index.html",
-    "Discord-webhook": "Discord WebHook URL"
+    "Discord-webhook": null,
+    "ipinfo": false,
+    "ipinfo-token": null
 }
 ```
+
+### Using [ipinfo.io](https://ipinfo.io/)
+
+
 ### More customized configuration requires more direct code changes!
 #### Default HTML
 ```html
