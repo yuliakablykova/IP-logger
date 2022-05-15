@@ -1,2 +1,5 @@
 # IP-logger
-IP logger using node.js and discord
+
+```shell
+npm i
+```
