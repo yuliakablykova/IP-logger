@@ -38,11 +38,11 @@ git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm i
 ```
 
 ### Using [ipinfo.io](https://ipinfo.io/)
-> Sign up at [https://ipinfo.io/](https://ipinfo.io/)
->> Go to Dashboard
->>> Copy your Token
->>>> Turn on ipinfo in conf.json
->>>>> Paste your token in conf.json at ipinfo-token (Eg. "ipinfo-token": "Token-Here")
+Sign up at [https://ipinfo.io/](https://ipinfo.io/)
+Go to [Dashboard](https://ipinfo.io/account/home)
+Copy your Token
+Turn on ipinfo in conf.json
+Paste your token in conf.json at ipinfo-token (Eg. "ipinfo-token": "Token-Here")
 
 ### More customized configuration requires more direct code changes!
 #### Default HTML
