@@ -89,7 +89,7 @@ pm2 stop <ID-from-status>
 
 ## Future plans
 - [ ] Web GUI Interface
-- [ ] Logs Website (Password protected)
+- [x] Logs Website (Password protected)
 
 ## Behind rating table
 Paste-into-code scripts are rated with minimal customization because any customization would be directly changing the code
