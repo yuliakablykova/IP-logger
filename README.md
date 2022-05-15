@@ -84,6 +84,7 @@ pm2 stop <ID-from-status>
 
 ## Additional Information
 > Tested on CentOS 7
+> Platforms/APIs used: [discord](https://discord.gg/) and [ipinfo.io](https://ipinfo.io/)
 
 ## Future plans
 - [ ] Web GUI Interface
