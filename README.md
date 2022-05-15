@@ -94,4 +94,4 @@ Paste-into-code scripts are alsou rated with ? in supporting https protocol this
 > grabify.link is the best option if you don't care about source code and if you do then the BEST TOOL for you is one that you will build, BUT for now my tool is THE BEST OPTION FOR YOU (;
 
 ## Demo
-![alt](/repository/assets/demo.png)
+![alt](https://github.com/NotYmL/IP-logger/assets/demo.png)
