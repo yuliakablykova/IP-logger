@@ -3,5 +3,7 @@
     "Https-privateKey": null,
     "Https-certificate": null,
     "html": "web/Index.html",
-    "Discord-webhook": null
+    "Discord-webhook": null,
+    "ipinfo": false,
+    "ipinfo-token": null
 }
