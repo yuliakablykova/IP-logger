@@ -1,11 +1,11 @@
 # IP-logger V-b-1.2.3333333333333333 Educational Uses Only ©️
-Logger/Grabber                                     | customization | IP look up    | Open Source   | Type          |
----------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|
-***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io*** | ***True***  | ***API***     |
-https://github.com/dzt/ip-grabber                  | `minimal`     | `None`        | True          | `Script`      |
-https://github.com/EesaZahed/IP-grabber            | good          | `None`        | True          | API           |
-https://github.com/cchhaarroonn/Grabby             | `minimal`     | IpInfo.io     | True          | `Script`      |
-https://grabify.link/                              | good          | grabify.link  | `False`       | WebSite       |
+Logger/Grabber                                     | customization | IP look up    | Open Source   | Type          | Can Use Https |
+---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io*** | ***True***  | ***API***     | ***True***    |
+https://github.com/dzt/ip-grabber                  | `minimal`     | `None`        | True          | `Script`      | `?`           |
+https://github.com/EesaZahed/IP-grabber            | good          | `None`        | True          | API           | `False`       |
+https://github.com/cchhaarroonn/Grabby             | `minimal`     | IpInfo.io     | True          | `Script`      | `?`           |
+https://grabify.link/                              | good          | grabify.link  | `False`       | WebSite       | True          |
 
 ## Instalation
 > Download repo!
@@ -73,3 +73,13 @@ git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm i
 
 ## Additional Information
 > Tested on CentOS 7
+
+## Future plans
+- [ ] Web GUI Interface
+- [ ] Logs Website (Password protected)
+
+## Behind rating table
+Paste-into-code scripts are rated with minimal customization because any customization would be directly changing the code
+Paste-into-code scripts are alsou rated with ? in supporting https protocol this is because the User has to make his website https for the script to use in https
+> Note
+> grabify.link is the best option if you don't care about source code and if you do then the BEST TOOL for you is one that you will build, BUT for now my tool is THE BEST OPTION FOR YOU (;
