@@ -1,6 +1,6 @@
 # IP-logger
 
-# Instalation
+## Instalation
 > Install Dependencies!
 ```shell
 npm i
@@ -13,3 +13,4 @@ node Server.js
 ```shell
 npm install pm2 -g && pm2 start Server.js
 ```
+## Configuration
