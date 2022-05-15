@@ -9,6 +9,6 @@ npm i
 node Server.js
 ```
 > OR use pm2!
-> ```shell
+```shell
 npm install pm2 -g && pm2 start Server.js
 ```
