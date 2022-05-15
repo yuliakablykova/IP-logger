@@ -48,7 +48,9 @@ pm2 stop <ID-from-status>
     "Https": false,
     "Https-privateKey": null,
     "Https-certificate": null,
-    "html": "web/Index.html",
+    "html": "web/index.html",
+    "Dashboard-URL": "/logs",
+    "Password": "123",
     "Discord-webhook": null,
     "ipinfo": false,
     "ipinfo-token": null
