@@ -1,4 +1,4 @@
-# IP-logger V-b-1.2.3333333 Educational Uses Only ©️
+# IP-logger V-b-1.9.999999 Educational Uses Only ©️
 Logger/Grabber                                     | customization | IP look up    | Open Source   | Type          | Can Use Https |
 ---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 ***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io*** | ***True***  | ***API***     | ***True***    |
