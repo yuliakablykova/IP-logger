@@ -63,3 +63,6 @@ git clone https://github.com/NotYmL/IP-logger && cd IP-logger/ && npm i && npm i
     </body>
 </html>
 ```
+
+## Additional Information
+> Tested on CentOS 7
