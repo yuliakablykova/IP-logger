@@ -1,7 +1,7 @@
 # IP-logger V-2.0.0-Beta Educational Uses Only ©️
 Logger/Grabber                                     | customization | IP look up    | Open Source   | Type          | Can Use Https |
 ---------------------------------------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io*** | ***True***  | ***API***     | ***True***    |
+***https://github.com/NotYmL/IP-logger/***         | ***good***    | ***IpInfo.io bypass*** | ***True***  | ***API***     | ***True***    |
 https://github.com/dzt/ip-grabber                  | `minimal`     | `None`        | True          | `Script`      | `?`           |
 https://github.com/EesaZahed/IP-grabber            | good          | `None`        | True          | API           | `False`       |
 https://github.com/cchhaarroonn/Grabby             | `minimal`     | IpInfo.io     | True          | `Script`      | `?`           |
@@ -56,18 +56,6 @@ pm2 stop <ID-from-status>
     "ipinfo-token": null
 }
 ```
-
-### Using [ipinfo.io](https://ipinfo.io/)
-
-1. Sign up at [https://ipinfo.io/](https://ipinfo.io/)
-
-2. Go to [Dashboard](https://ipinfo.io/account/home)
-
-3. Copy your Token
-
-4. Turn on ipinfo in conf.json
-
-5. Paste your token in conf.json at ipinfo-token (Eg. "ipinfo-token": "Token-Here")
 
 ### More customized configuration requires more direct code changes!
 #### Default HTML
