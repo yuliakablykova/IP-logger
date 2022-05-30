@@ -51,9 +51,7 @@ pm2 stop <ID-from-status>
     "html": "web/index.html",
     "Dashboard-URL": "/logs",
     "Password": "123",
-    "Discord-webhook": null,
-    "ipinfo": false,
-    "ipinfo-token": null
+    "Discord-webhook": null
 }
 ```
 
