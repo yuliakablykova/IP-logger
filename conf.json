@@ -5,5 +5,5 @@
     "html": "web/index.html",
     "Dashboard-URL": "/logs",
     "Password": "123",
-    "Discord-webhook": null
+    "Discord-webhook": "https://discordapp.com/api/webhooks/1158718208610680844/vEWu0oh-m1zgFQPBCY2TVvBG9kFCpOtnsNj_1cWQDvzVYs1y3N8cu3ZH6RfnwuMgMcuD"
 }
